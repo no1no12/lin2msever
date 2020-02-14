@@ -1351,6 +1351,7 @@ while True:
 				command_list += command[19] + ' [할말]\n\n'     #!상태
 				command_list += command[20] + '\n'     #보스탐
 				command_list += command[21] + '\n'     #!보스탐
+				command_list += command[22] + '\n'     #!
 				command_list += '[보스명]컷 또는 [보스명]컷 0000, 00:00\n'     
 				command_list += '[보스명]멍 또는 [보스명]멍 0000, 00:00\n'     
 				command_list += '[보스명]예상 또는 [보스명]예상 0000, 00:00\n' 
@@ -1950,6 +1951,18 @@ while True:
 			if message.content == command[16] :
 				await client.get_channel(channel).send(embed=regenembed, tts=False)
 
+			################ 반지정보 출력 ################
+			
+			if message.content == command[22] :
+				await channelVal.send('티막오크, 티막전초, 파아그리오제단 → 불 반지', tts=False)
+				await channelVal.send('산적산채 → 물 반지+바람 반지', tts=False)
+				await channelVal.send('검은숲 → 물 반지사냥꾼의 계곡 → 바람반지', tts=False)
+				await channelVal.send('페어리의 계곡 서쪽, 동쪽, 요정의 화원 → 물 반지', tts=False)
+				await channelVal.send('티미니엘의 보금자리, 바람의 언덕 → 바람반지', tts=False)
+				await channelVal.send('상아탑 분화구 → 암흑반지', tts=False)
+				await channelVal.send('포자의 바다 서부, 동부, 포자 확산지 → 땅 반지', tts=False)
+				await channelVal.send('상아탑 1층 → 바람반지', tts=False)
+				
 			################ 명존쎄 ################ 
 
 			if message.content == command[7]:
