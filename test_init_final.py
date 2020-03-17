@@ -205,7 +205,7 @@ def init():
 
 	############## 보탐봇 명령어 리스트 #####################
 	for i in range(len(command_inputData)):
-		command.append(command_inputData[i][12:].rstrip('\r'))     #command[0] ~ [22] : 명령어
+		command.append(command_inputData[i][12:].rstrip('\r'))     #command[0] ~ [23] : 명령어
 	
 	for i in range(len(basicSetting)):
 		basicSetting[i] = basicSetting[i].strip()
@@ -1353,6 +1353,7 @@ while True:
 				command_list += command[20] + '\n'     #보스탐
 				command_list += command[21] + '\n'     #!보스탐
 				command_list += command[22] + '\n'     #!
+				command_list += command[23] + ' [금액]\n'     #!
 				command_list += '[보스명]컷 또는 [보스명]컷 0000, 00:00\n'     
 				command_list += '[보스명]멍 또는 [보스명]멍 0000, 00:00\n'     
 				command_list += '[보스명]예상 또는 [보스명]예상 0000, 00:00\n' 
@@ -1970,7 +1971,14 @@ while True:
 						color=0xff00ff
 						)
 				await client.get_channel(channel).send( embed=ringembed, tts=False)
-				
+			################ 계산 출력 ################
+			if message.content == command[23] :
+				separate_money = []
+				separate_money = message.content[len(command[23])+1:].split(" ")
+				num_sep = int(separate_money[0])
+				cal_tax1 = math.ceil(float(separate_money[1])*0.95)
+				await client.get_channel(channel).send('```페이백 금액 : ' + str(cal_tax1)5)) + '```', tts=False)
+			
 			################ 명존쎄 ################ 
 
 			if message.content == command[7]:
