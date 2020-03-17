@@ -1977,7 +1977,7 @@ while True:
 				separate_money = message.content[len(command[23])+1:].split(" ")
 				num_sep = int(separate_money[0])
 				cal_tax1 = math.ceil(float(separate_money[1])*0.95)
-				await client.get_channel(channel).send('```페이백 금액 : ' + str(cal_tax1)5)) + '```', tts=False)
+				await client.get_channel(channel).send('```페이백 금액 : ' + str(cal_tax1) + '```', tts=False)
 			
 			################ 명존쎄 ################ 
 
