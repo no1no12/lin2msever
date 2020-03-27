@@ -1975,8 +1975,15 @@ while True:
 			if message.content == command[23] :
 				separate_money = []
 				separate_money = message.content[len(command[23])+1:].split(" ")
-				cal_tax1 = math.ceil(float(separate_money[0])*0.95)
-				await client.get_channel(channel).send('```페이백 금액 : ' + str(cal_tax1) + '```', tts=False)
+				cal_tax1 = math.ceil(float(separate_money)*0.05)
+				cal_tax2 = math.ceil(float(separate_money)*0.95)
+				await client.get_channel(channel).send(
+				'=======================' +
+				'\n페이백 금액 : ' + 
+				str(cal_tax2) + 
+				'\n수수료 : ' + 
+				str(cal_tax1) + 
+				'======================', tts=False)
 			
 			################ 명존쎄 ################ 
 
