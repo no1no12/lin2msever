@@ -1973,7 +1973,6 @@ while True:
 				await client.get_channel(channel).send( embed=ringembed, tts=False)
 			################ 계산 출력 ################
 			if message.content == command[23] :
-				separate_money = []
 				separate_money = message.content[len(command[23])+1:].split(" ")
 				cal_tax1 = math.ceil(float(separate_money)*0.05)
 				cal_tax2 = math.ceil(float(separate_money)*0.95)
