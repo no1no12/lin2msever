@@ -1665,7 +1665,7 @@ while True:
 
 			################ 보스타임 출력 ################ 
 
-			if message.content == command[20] or message.content == '/1' or message.content == '/보스':
+			if message.content == command[20]:
 				
 				datelist = []
 				datelist2 = []
