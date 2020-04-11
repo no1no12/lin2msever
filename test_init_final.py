@@ -1965,6 +1965,12 @@ while True:
 				noti_list += '상아탑 분화구 → 암흑반지\n'
 				noti_list += '산포자의 바다 서부, 동부, 포자 확산지 → 땅 반지\n'
 				noti_list += '상아탑 1층 → 바람반지\n'
+				noti_list += '상아탑 2층 → 불반지\n'
+				noti_list += '상아탑 3층 → 속성없음\n'
+				noti_list += '안타 1,2층 → 암흑반지\n'
+				noti_list += '안타 3,4층 → 불반지\n'
+				noti_list += '안타 5,6층 → 땅반지\n'
+				noti_list += '자리체 → 암흑반지\n'
 				ringembed = discord.Embed(
 						title = "----- 반지 정보 -----",
 						description= noti_list,
