@@ -1957,20 +1957,19 @@ while True:
 			
 			if message.content == command[22] :
 				noti_list = ''
-				noti_list += '티막오크, 티막전초, 파아그리오제단 → 불 반지\n'
-				noti_list += '산적산채 → 물 반지+바람 반지\n'
-				noti_list += '검은숲 → 물 반지사냥꾼의 계곡 → 바람반지\n'
-				noti_list += '페어리의 계곡 서쪽, 동쪽, 요정의 화원 → 물 반지\n'
-				noti_list += '티미니엘의 보금자리, 바람의 언덕 → 바람반지\n'
-				noti_list += '상아탑 분화구 → 암흑반지\n'
-				noti_list += '산포자의 바다 서부, 동부, 포자 확산지 → 땅 반지\n'
-				noti_list += '상아탑 1층 → 바람반지\n'
-				noti_list += '상아탑 2층 → 불반지\n'
-				noti_list += '상아탑 3층 → 속성없음\n'
-				noti_list += '안타 1,2층 → 암흑반지\n'
-				noti_list += '안타 3,4층 → 불반지\n'
-				noti_list += '안타 5,6층 → 땅반지\n'
-				noti_list += '자리체 → 암흑반지\n'
+				noti_list += '<불 반지>\n'
+				noti_list += '티막경계지, 티막전초, 파아그리오제단\n'
+				noti_list += '상아탑2층, 안타3,4층\n'
+				noti_list += '<바람 반지>\n'
+				noti_list += '산적산채, 검은숲, 사냥꾼계곡\n'
+				noti_list += '페어리의 계곡 서쪽, 동쪽, 요정의 화원\n'
+				noti_list += '판루엠 거주지&초소\n'
+				noti_list += '티미니엘의 보금자리, 바람의 언덕, 상아탑1층\n'
+				noti_list += '<암흑 반지>\n'
+				noti_list += '자리체, 상아탑 분화구, 안타 1,2층\n'
+				noti_list += '포자의 바다 서부, 동부, 포자 확산지\n'
+				noti_list += '<물 반지>\n'
+				noti_list += '도마뱀초원, 레토부락, 포자의 습지,\n'
 				ringembed = discord.Embed(
 						title = "----- 반지 정보 -----",
 						description= noti_list,
