@@ -1967,7 +1967,8 @@ while True:
 				noti_list += '티미니엘의 보금자리, 바람의 언덕, 상아탑1층\n'
 				noti_list += '<암흑 반지>\n'
 				noti_list += '자리체, 상아탑 분화구, 안타 1,2층\n'
-				noti_list += '포자의 바다 서부, 동부, 포자 확산지\n'
+				noti_list += '<땅 반지>\n'
+				noti_list += '안타 5,6층, 포자의 바다 서부, 동부, 포자 확산지\n'
 				noti_list += '<물 반지>\n'
 				noti_list += '도마뱀초원, 레토부락, 포자의 습지,\n'
 				ringembed = discord.Embed(
